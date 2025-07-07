@@ -343,6 +343,7 @@ fetch(`https://api.hatch.lol/projects/${id}`).then((res) => {
                                     if (res.status === 200) {
                                         form.querySelector("input[type=\"text\"]").value = "";
                                         form.querySelector("input[type=\"text\"]").placeholder = "Comment posted!";
+                                        window.location.reload();
                                     }
                                 });
                             });
