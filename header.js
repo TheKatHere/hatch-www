@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("header").innerHTML = await (
-        await fetch("/components/header.html")
+        await fetch("components/header.html")
     ).text();
     document.getElementById("userbox").innerHTML = await (
-        await fetch("/components/userbox.html")
+        await fetch("components/userbox.html")
     ).text();
 
     if (localStorage.getItem("token")) {
